@@ -472,13 +472,15 @@ footer span{
 @media screen and (min-width: 320px) {
 
 
-/*Animation*/
-.caseStudies-img:hover{
-    transition: all 0.6s;
-    transform: scale(1.1);
-}
+    /*Animation*/
+    .caseStudies-img:hover{
+        transition: all 0.6s;
+        transform: scale(1.1);
+    }
 
-.gallery-img:hover{
-    transition: all 0.6s;
-    transform: scale(1.1);
+    .gallery-img:hover{
+        transition: all 0.6s;
+        transform: scale(1.1);
+    }
+
 }
