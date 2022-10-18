@@ -49,20 +49,23 @@
 
         <!-- Main-->
         <main>
-            <h1 class="animate__animated animate__bounce">Argentina-based <br> UX/UI Designer</h1>
+            <h1>Argentina-based <br> UX/UI Designer</h1>
+            <span class="h1rectangle-Argentina animate__animated animate__fadeIn animate__slower" > </span>
+            <span class="h1rectangle-Designer animate__animated animate__fadeIn animate__slower"> </span>
             <h2>Solving problems with beautiful, user-centric digital products.</h2>
             <div class="button-main">
                 <button onclick="location.href='#caseStudies'">See my projects</button>
                 <div onclick="location.href='#caseStudies'" class="button-rectangle"></div>
             </div>
-            <img src="./Assets/Scroll arrow.svg" alt="scroll">
+            <img class="animate__animated animate__bounce animate__infinite animate__slow" src="./Assets/Scroll arrow.svg" alt="scroll">
         </main>
 
         <!-- Case Studies Section-->
 
-        <section id="caseStudies">
+        <section id="caseStudies" data-aos="fade-up">
 
             <h3>Case Studies</h3>
+            <span class="h3rectangle-caseStudies"> </span>
 
             <h4>In-depth case studies from product strategy and ideation to prototyping, user testing and shipping the
                 final product.</h4>
@@ -148,10 +151,11 @@
 
         <!-- About Section -->
 
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <img src="./Assets/About Me.png" alt="Victoria Zheng photo">
             <div class="aboutMe-right">
                 <h3>About me</h3>
+                <span class="h3rectangle-about"> </span>
                 <h4>I am a UX/UI Designer with experience in digital product design and graphic design.
                     <br>
                     <br>
@@ -173,9 +177,9 @@
 
         <!-- Resume Section-->
 
-        <section id="resume">
+        <section id="resume" data-aos="fade-up">
             <h3>Resume</h3>
-
+            <span class="h3rectangle-resume"> </span>
             <div class="resume-subtitleButton">
                 <div class="resume-subtitle-line">
                     <h4>Click this button if you’d like to view my full resume.</h4>
@@ -194,8 +198,9 @@
 
         <!-- Gallery Section -->
 
-        <section id="gallery">
+        <section id="gallery" data-aos="fade-up">
             <h3>Gallery</h3>
+            <span class="h3rectangle-gallery"> </span>
             <h4>As well as digital product design, I also worked in some fashion design projects illustrations.</h4>
 
             <!-- Projects Cards Section -->
@@ -286,9 +291,10 @@
 
         <!-- Contact Section -->
 
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <div class="contact-leftsection">
                 <h3>Let’s get in touch</h3>
+                <span class="h3rectangle-contact"> </span>
                 <h4>If you’d like to chat about working together, you can find me on Linkedin or drop me an email.</h4>
                 <div class="contact-socialnetworks">
                     <a href="http://www.linkedin.com/in/victoriazhenguxuidesign/" target="blank"><img
@@ -328,6 +334,9 @@
 
     <!-- https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
