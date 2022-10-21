@@ -32,6 +32,21 @@
 </head>
 
 <body>
+    <div id="menu" class="menu disappear-desktop">
+        <nav class="menu-nav">
+            <ul class="menu-nav-ul">
+                <li><a href="./index.html"><span>• Victoria Zheng •</span></a></li>
+                <li id="spacer"></li>
+                <li id="menu-icon2" class="disappear-desktop"><img class="menu-icon" src="./Assets/Cross icon.svg" alt=""></li>
+            </ul>
+        </nav>
+        <div class="menu-options">
+            <span class="menu-option"><a href="#caseStudies">CASE STUDIES</a></span>
+            <span class="menu-option"><a href="#about">ABOUT</a></span>
+            <span class="menu-option"><a href="#gallery">GALLERY</a></span>
+            <span class="menu-option"><a href="#contact">CONTACT</a></span>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Nav Bar-->
@@ -39,11 +54,11 @@
             <ul>
                 <li><a href="./index.html"><span>• Victoria Zheng •</span></a></li>
                 <li id="spacer"></li>
-                <li><a href="#caseStudies">CASE STUDIES</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li class="disappear-mobile"><a href="#caseStudies">CASE STUDIES</a></li>
+                <li class="disappear-mobile"><a href="#about">ABOUT</a></li>
+                <li class="disappear-mobile"><a href="#gallery">GALLERY</a></li>
+                <li class="disappear-mobile"><a href="#contact">CONTACT</a></li>
+                <li id="menu-icon" class="disappear-desktop"><img class="menu-icon" src="./Assets/burger menu.svg" alt=""></li>
             </ul>
         </nav>
 
@@ -172,19 +187,6 @@
                     I have experience designing apps, websites and webapps. I can solve problems, create functional
                     experiences and digital interfaces focus on user needs.
                 </h4>
-            </div>
-        </section>
-
-        <!-- Resume Section-->
-
-        <section id="resume" data-aos="fade-up">
-            <h3>Resume</h3>
-            <span class="h3rectangle-resume"> </span>
-            <div class="resume-subtitleButton">
-                <div class="resume-subtitle-line">
-                    <h4>Click this button if you’d like to view my full resume.</h4>
-                    <img src="./Assets/Line resume.png" alt="line">
-                </div>
                 <div class="button-main">
                     <a href="./Assets/CV - Victoria Zheng.pdf" target="_blank"><button>Download CV</button></a>
                     <a href="./Assets/CV - Victoria Zheng.pdf" target="_blank">
@@ -192,9 +194,8 @@
                     </a>
                 </div>
             </div>
-
-            <img class="cv-img" src="./Assets/CV.png" alt="Victoria Zheng Resume">
         </section>
+
 
         <!-- Gallery Section -->
 
@@ -332,11 +333,30 @@
     </div>
 
 
+   
+
     <!-- https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+        const showMenu = false;
+        document.getElementById('menu-icon').onclick = function() {
+            document.getElementById('menu').style.opacity = 1;
+            document.getElementById('menu').style.zIndex = 10;
+        }
+        document.getElementById('menu-icon2').onclick = function() {
+            document.getElementById('menu').style.opacity = 0;
+            document.getElementById('menu').style.zIndex = -5;
+        }
+        const menuItems = document.querySelectorAll('.menu-option');
+        menuItems.forEach((item) => {
+            item.onclick = function() {
+            document.getElementById('menu').style.opacity = 0;
+            document.getElementById('menu').style.zIndex = -5;
+        }
+        });
+    </script>
+
 </body>
 
 </html>
