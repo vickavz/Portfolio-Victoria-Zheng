@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-victoria-zheng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickavz/Portfolio-Victoria-Zheng.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickavz/Portfolio-Victoria-Zheng/issues"
+  },
+  "homepage": "https://github.com/vickavz/Portfolio-Victoria-Zheng#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
