@@ -2,7 +2,7 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
-$message = $_POST['message'];
+$message2 = $_POST['message'];
 
 $header = 'De: ' . $email . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -11,7 +11,7 @@ $header .= "Content-Type: text/plain";
 
 $message = "Este mensaje fue enviado por  " . "$name" . ",\r\n";
 $message .= "Su e-mail es: " . "$email" . " \r\n";
-$message .= "Mensaje: " . "$_POST['mensaje']" . " \r\n";
+$message .= "Mensaje: " . "$message2" . " \r\n";
 $message .= "Enviado el " . date('d/m/Y', time());
 
 $for = 'vickyx1@hotmail.com';
