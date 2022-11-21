@@ -461,6 +461,18 @@ form input {
   border-bottom: 1px solid #2A2A2A;
   margin-bottom: 10px;
   outline: none; }
+  form input.contact-button {
+    color: white;
+    background-color: #2A2A2A;
+    border-radius: 3px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    height: 59px;
+    margin: 0;
+    z-index: 1;
+    border: none;
+    cursor: pointer; }
 
 form textarea {
   font-family: 'Inter';

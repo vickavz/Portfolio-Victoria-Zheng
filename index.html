@@ -196,8 +196,8 @@
                     experiences and digital interfaces focus on user needs.
                 </h4>
                 <div class="button-main">
-                    <a href="./Assets/CV - Victoria Zheng.pdf" target="_blank"><button>Download CV</button></a>
-                    <a href="./Assets/CV - Victoria Zheng.pdf" target="_blank">
+                    <a href="./Assets/Resume - Victoria Zheng.pdf" target="_blank"><button>Download CV</button></a>
+                    <a href="./Assets/Resume - Victoria Zheng.pdf" target="_blank">
                         <div class="button-rectangle"></div>
                     </a>
                 </div>
@@ -316,17 +316,17 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <form action="./enviar.php" method="post">
                     <p>Name*</p>
-                    <input type="Name">
+                    <input name="name" type="Name">
                     <p>Email*</p>
-                    <input type="Email">
+                    <input name="email" type="Email" required>
                     <p>Subject</p>
-                    <input type="Subject">
+                    <input name="subject" type="Subject">
                     <p>Message</p>
-                    <textarea rows="5" type="Message"></textarea>
+                    <textarea name="message" rows="5" type="Message"></textarea>
+                    <input class="contact-button" type="submit" value="Let's talk">
                 </form>
-                <button class="contact-button">Let's talk</button>
                 <img src="./Assets/dot pattern.svg" alt="">
             </div>
             <img class="contactForm-bg" src="./Assets/Contact form BG.png" alt="Contact form background color">

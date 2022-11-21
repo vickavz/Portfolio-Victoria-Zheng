@@ -411,6 +411,20 @@ form input{
     border-bottom: 1px solid $black;
     margin-bottom: 10px;
     outline: none;
+
+    &.contact-button {
+        color: white;
+        background-color: $black;
+        border-radius: 3px;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 18px;
+        height: 59px;
+        margin: 0;
+        z-index: 1;
+        border: none;
+        cursor: pointer;
+    }
 }
 form textarea{
     font-family: 'Inter';
